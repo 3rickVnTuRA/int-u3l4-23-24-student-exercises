@@ -23,19 +23,21 @@ let image = document.querySelector('.image');
 
 contentButton.addEventListener('click', function() {
 
+myName.innerHTML="My name is Erick";
+myHobby.innerHTML= "I like to draw";
+myLocation.innerHTML= "I live in New York";
+})
 
 
-
-
-
-});
 
 // 3. Add an event listener to the `image1Button`
 // 4. When clicked, it should change the source of `image` to another image URL.
-
-
-
-
+image1Button.addEventListener("click", function(){
+image.src= "https://www.syfy.com/sites/syfy/files/styles/scale_1280/public/2023/01/dk.jpg";
+})
+image2Button.addEventListener("click", function(){
+  image.src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgdy0PghYp8V3NRX6y4Srz6fW-J6t46pXQZTuT-dOL4g&s";
+})
 
 // 5. Add an event listener to the `image2Button`
 // 6. When clicked, it should change the source of `image` to another image URL.
@@ -43,3 +45,9 @@ contentButton.addEventListener('click', function() {
 
 // BONUS
 // 7. Try using different event types for your buttons.
+contentButton.addEventListener("mouseover", function(){
+  contentButton.style.backgroundColor="red"
+})
+  contentButton.addEventListener("mouseout", function(){
+    contentButton.style.backgroundColor="green"
+})
